@@ -436,6 +436,10 @@ Replace `MyConfig.json` with the actual name of your JSON file.  The
 settings don't go into effect until you reboot the device, which is
 why we also added `--reset` at the end.
 
+For Linux the config tool can be build by calling `./build_linux.sh` in folder _CmdLineConfigTool/Linux_.
+
+A config file can be send by:
+`./pinscape-config --put-config MyConfig.json --reset`
 
 ### Firmware updates
 
@@ -624,7 +628,7 @@ extensible USB protocols.  You can access the device directly through
 its USB protocols in cases where the Windows API isn't suitable, such
 as from a Linux host, from another microcontroller, or from a Windows
 programming language that can't readily import C++ APIs.  See
-[USBProtocol/README.md](USBProtocol/README.md) for details.
+[USBProtocol/README.md](USBProtocol/README.md) and _LinuxAPI_ folder for details.
 
 
 ## Command Console
@@ -796,4 +800,3 @@ Scintlla Edit Control, Copyright 1998-2021 by Neil Hodgson
 <neilh@scintilla.org>.  Distributed under a Python-like
 license; see Scintilla/License.txt in this source
 tree for the full license text.
-
